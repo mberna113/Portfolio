@@ -2,10 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Michael Berna | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Berna | GIS Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; scroll-behavior: smooth; background: #f8f9fa; }
+    header { background: #003366; color: white; padding: 1em; text-align: center; }
+    nav { background: #005f99; padding: 0.5em; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 2em; border-bottom: 1px solid #ddd; }
+    h2 { color: #003366; }
+    footer { text-align: center; padding: 1em; background: #003366; color: white; }
+    .project-card { background: white; padding: 1em; margin: 1em 0; border-left: 4px solid #005f99; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+  </style>
 </head>
 <body>
-  <h1>Welcome to my portfolio</h1>
-  <p>This is a blank start. More coming soon!</p>
+
+  <header>
+    <h1>Michael Berna</h1>
+    <p>Geospatial Science Portfolio</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>My journey into spatial problem-solving began in the U.S. Army as a Cavalry Scout, where terrain, navigation, and geolocation were critical to every mission. That passion for place-based precision grew while instructing at the Northern Warfare Training Center, where I taught Cold Weather Warfare and Military Mountaineering. In those environments, knowing exactly where you were could mean the difference between success and failure.</p>
+      <p>Later, I discovered the field of Geographic Information Systems (GIS) and realized there was a whole discipline devoted to answering spatial questions. Since then, I’ve been combining my love of the outdoors with solving real-world problems using maps, data, and analysis.</p>
+      <p>In the age of big data, I believe we have more tools and knowledge than ever to help improve—and even save—lives through spatial insight. My work blends hands-on experience with cutting-edge GIS tools to do just that.</p>
+      <img src="images/headshot.jpg" alt="Photo of Michael Berna" style="max-width: 200px; border-radius: 8px; margin-top: 1em;">
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Sample Project</h3>
+        <p>Description of a GIS/remote sensing project with Esri tools.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Sample Project</h3>
+        <p>Description of a GIS/remote sensing project with Esri tools.</p>
+        <a href="#">View Project</a>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>ArcGIS Pro / Online / Experience Builder</li>
+        <li>Python & Jupyter for GIS</li>
+        <li>Remote Sensing & Image Classification</li>
+        <li>Google Earth Engine</li>
+        <li>PostGIS / Spatial SQL</li>
+      </ul>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Link to your PDF resume:</p>
+      <a href="files/Michael_Berna_Resume.pdf" target="_blank">Download Resume</a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:michael.e.berna@gmail.com">michael.e.berna@gmail.com</a></p>
+      <p>Cell: <a href="tel:+12709858735">(270) 985-8735</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Michael Berna</p>
+  </footer>
+
 </body>
 </html>
