@@ -190,14 +190,15 @@
 
 <section id="resume">
       <h2>Resume</h2>
-      <p>Link to your PDF resume:</p>
-      <details style="margin-top: 1em;">
+      <details style="margin-top: 1em;" onclick="document.getElementById('resumePreview').style.height = document.getElementById('resumePreview').style.height === 'auto' ? '50px' : 'auto';">
         <summary style="cursor: pointer; font-weight: bold; color: #2e3d1f;">Preview Resume</summary>
-        <div style="margin-top: 1em; display: flex; justify-content: center;">
-          <iframe src="Michael_Berna_Resume.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
+        <div style="margin-top: 1em; display: flex; justify-content: center; overflow: hidden; height: 50px; transition: height 0.5s ease;" id="resumePreview">
+          <img src="images/resume_preview.png" alt="Resume Preview" style="max-width: 100%; border-radius: 8px; border: 1px solid #ccc;">
         </div>
       </details>
-   <a href="Michael_Berna_Resume.pdf" target="_blank">Download Resume</a>
+      <p style="margin-top: 1em; text-align: center;">
+        <a href="Michael_Berna_Resume.pdf" target="_blank">Download Full Resume (PDF)</a>
+      </p>
     </section>
 
 <section id="contact">
